@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  asp-net-authorization-sample-web:
+    container_name: asp-net-authorization-sample-web
+    image: asp-net-authorization-sample-web
+    build:
+      context: .
+      dockerfile: src/AspNetAuthorizationSample.Web/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=5001
+    ports:
+      - "5001:5001"

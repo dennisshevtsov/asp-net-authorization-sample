@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34825.169
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetAuthorizationSample.Web", "src\AspNetAuthorizationSample.Web\AspNetAuthorizationSample.Web.csproj", "{77E0704D-1E6C-47AF-8BEE-B2DAEEFD3458}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{EB95430B-FE3B-45B8-947F-F587575B1878}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{77E0704D-1E6C-47AF-8BEE-B2DAEEFD3458}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77E0704D-1E6C-47AF-8BEE-B2DAEEFD3458}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77E0704D-1E6C-47AF-8BEE-B2DAEEFD3458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB95430B-FE3B-45B8-947F-F587575B1878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB95430B-FE3B-45B8-947F-F587575B1878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB95430B-FE3B-45B8-947F-F587575B1878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB95430B-FE3B-45B8-947F-F587575B1878}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
