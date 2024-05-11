@@ -12,3 +12,15 @@ services:
       - ASPNETCORE_HTTP_PORTS=5001
     ports:
       - "5001:5001"
+  asp-net-authorization-sample-oidc:
+    container_name: asp-net-authorization-sample-oidc
+    image: mockserver/mockserver:mockserver-5.15.0
+    ports:
+      - 5002:5002
+    environment:
+      - MOCKSERVER_PROPERTY_FILE=/config/mockserver.properties
+      - MOCKSERVER_INITIALIZATION_JSON_PATH=/config/requests.json
+    volumes:
+      - type: bind
+        source: ./oidc-server
+        target: /config

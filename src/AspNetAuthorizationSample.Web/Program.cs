@@ -4,8 +4,8 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
-                  options.Audience = "http://localhost:5001";
-                  options.Authority = "http://localhost:5002";
+                  options.Audience = "http://host.docker.internal:5001";
+                  options.Authority = "http://host.docker.internal:5002";
                   options.RequireHttpsMetadata = false;
                 });
 builder.Services.AddAuthorization();
